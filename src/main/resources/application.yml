@@ -6,3 +6,7 @@ spring:
     url: jdbc:postgresql://localhost:15432/atmdb
     username: atmuser
     password: atmpassword
+
+  mvc:
+    problemdetails:
+      enabled: true
