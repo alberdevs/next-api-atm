@@ -7,6 +7,15 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15.2
+        ports:
+          - 15432:5432
+        env:
+          POSTGRES_DB: atmdb
+          POSTGRES_USER: atmuser
+          POSTGRES_PASSWORD: atmpassword
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 17
