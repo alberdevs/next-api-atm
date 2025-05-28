@@ -1,13 +1,13 @@
-package es.nextdigital.demo;
+package es.nextdigital;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class AtmApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(AtmApplication.class, args);
 	}
 
 }
